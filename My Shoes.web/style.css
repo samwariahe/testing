@@ -1,0 +1,98 @@
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem);
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+section {
+    padding: 2em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 68em;
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: var(--clr-accent, gray);
+    color: var(--clr-text, black);
+    text-emphasis: weight;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition:
+        transform 250ms ease-in-out;
+    opacity: 250ms linier;
+
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.primary-title {
+    font-size: 4rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    size: 25px;
+    line-height: 1;
+    color: rgb(2, 2, 66);
+}
+
+
+
+
+.hero {
+    color: black;
+    text-align: center;
+    padding: 30px;
+    background-image:
+        url(/images/shoe2.jpg);
+
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
